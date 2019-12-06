@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+  <h3>Search Result</h3>
+  <hr>
+{% for i in match1 %}
+    Shirt name={{i.name}}<br>
+    Description={{i.desc}}<br>
+    price={{i.price}}<br>
+    {% if i.available %}Available
+    {% else %} Not Available
+    {% endif %} <br>
+{% endfor %}
+{% for i in match2 %}
+    Shirt name={{i.name}}<br>
+    Description={{i.desc}}<br>
+    price={{i.price}}<br>
+    {% if i.available %}Available
+    {% else %} Not Available
+    {% endif %} <br>
+{% endfor %}
+{% for i in match3 %}
+    Trousers name={{i.name}}<br>
+    Description={{i.desc}}<br>
+    price={{i.price}}<br>
+    {% if i.available %}Available
+    {% else %} Not Available
+    {% endif %} <br>
+{% endfor %}
+
+</div>
+{% endblock %}
+  
